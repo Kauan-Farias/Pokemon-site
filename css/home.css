@@ -39,7 +39,7 @@ body{
 .navegation__links{
 	width: 100%;
 	height: 100px;
-	background: white;
+	background: gray;
 	transition: background-color 1s, color 1s, box-shadow 1s;
 	text-decoration: none;
 	text-align: center;
