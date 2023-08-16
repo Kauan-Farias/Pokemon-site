@@ -9,6 +9,7 @@
 
 body{
 	background-image: url(../images/wallpaper/wallpaper-bd.jpg);
+	background-attachment: fixed;
 }
 
 /*Start header top*/
