@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
+@import url(https://db.onlinewebfonts.com/c/d2d21cf0ee4c1d969d8a4dccc587ab26?family=Flexo-Medium);
+
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Flexo-Medium",arial,sans-serif;
 }
 
 body{
@@ -35,6 +37,7 @@ body{
 	grid-template-columns: 150px 150px 150px;
 	justify-content: center;
 	top: -60px;
+	z-index: 10;
 }
 
 .navegation__links{
@@ -110,11 +113,60 @@ body{
 
 /*Start main container*/
 .main-container{
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(219, 219, 219);
 	width: 90vw;
 	height: 1000px;
 	margin: 10px auto;
 	border-radius: 10px;
 	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.311);
+	padding: 5px;
+}
+
+.pokemon{
+	width: 100%;
+	height: 400px;
+}
+
+.pokemon__card{
+	background-color: rgb(255, 255, 255);
+	width: 22%;
+	height: 100%;
+	padding: 6px;
+	border-radius: 3px;
+	margin: 0 5.5%;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.425);
+}
+
+.pokemon__card:hover .pokemon__sprite > img{
+	width: 80%;
+	transform: translateY(-15px);
+}
+
+.pokemon__nome{
+	color: rgb(0, 0, 0);
+	font-weight: 200;
+	font-size: 1.8em;
+	margin: 15px 0;
+}
+
+.pokemon__sprite{
+	background: url(../images/wallpaper/wallpaper-sprites.jpg) bottom center;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 55%;
+	border-radius: 3px;
+}
+
+.pokemon__sprite > img{
+	display: block;
+	margin: auto;
+	width: 75%;
+	position: relative;
+	top: 10px;
+	transition: width 0.5s , transform 0.5s;
+	max-height: 220px;
 }
 /*End main container*/
