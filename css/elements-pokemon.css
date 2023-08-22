@@ -1,0 +1,136 @@
+:root{
+	--color1-card:#242424;
+	--color-card-text:#ffffff;
+
+	--color-fire:#fd7d24;
+	--color-water:#4592c3;
+	--color-grass:#9bcc50;
+	--color-poison:#b97fc9;
+}
+
+/*Start type*/
+.type-pokemon--fire{
+	display: block;
+	background-color:var(--color-fire);
+	margin: 0px 3px;
+	text-align: center;
+	color: white;
+	padding: 3px 8px;
+	border-radius: 2px;
+	font-weight: 200;
+}
+
+.type-pokemon--water{
+	display: inline-block;
+	background-color:var(--color-water);
+	margin: 0px 3px;
+	text-align: center;
+	color: white;
+	padding: 3px 8px;
+	border-radius: 2px;
+	font-weight: 200;
+}
+
+.type-pokemon--grass{
+	display: inline-block;
+	background-color:var(--color-grass);
+	margin: 0px 3px;
+	text-align: center;
+	color: black;
+	padding: 3px 8px;
+	border-radius: 2px;
+	font-weight: 200;
+}
+
+.type-pokemon--poison{
+	display: inline-block;
+	background-color:var(--color-poison);
+	margin: 0px 3px;
+	text-align: center;
+	color: white;
+	padding: 3px 8px;
+	border-radius: 2px;
+	font-weight: 200;
+}
+/*End type*/
+
+/*Start card pokemon*/
+.pokemon__card{
+	background-color: var(--color1-card);
+	width: 22%;
+	height: 100%;
+	padding: 6px;
+	border-radius: 3px;
+	margin: 0 5.5%;
+	cursor: pointer;
+	display: inline-block;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.325);
+	transition: transform 1.5s, box-shadow 1.5s;
+}
+
+.pokemon__card:active{
+	transform: rotate3d(12, 60, 0, 30deg);
+	box-shadow: 22px 22px 25px rgba(0, 0, 0, 0.325);
+}
+
+.pokemon__card:hover .pokemon__sprite > img{
+	width: 80%;
+	transform: translateY(-15px);
+}
+
+.pokemon__nome{
+	color: var(--color-card-text);
+	font-weight: 200;
+	font-size: 1.8em;
+	display: inline-block;
+	position: absolute;
+}
+
+.pokemon__number{
+	color: rgb(94, 94, 94);
+	font-weight: 200;
+	font-size: 1.2em;
+	text-align: end;
+	display: block;
+	line-height: 2;
+}
+
+.pokemon__sprite{
+	background: url(../images/wallpaper/wallpaper-sprites.jpg) bottom center;
+	background-size: cover;
+	display: block;
+	width: 100%;
+	height: 55%;
+	border-radius: 3px;
+}
+
+.pokemon__sprite > img{
+	display: block;
+	margin: auto;
+	width: 75%;
+	position: relative;
+	top: 10px;
+	transition: width 0.5s , transform 0.5s;
+	max-height: 220px;
+}
+
+.pokemon__info > dt{
+	font-size: 1.2em;
+	color: var(--color-card-text);
+}
+
+.pokemon__info > dt:nth-child(1){
+	display: inline-block;
+	margin: 0px 0px 15px;
+}
+
+.pokemon__info > dt:nth-child(2){
+	display: block;
+	margin: 10px 0px;
+}
+
+.pokemon__info > dd{
+	display: inline-block;
+	color: var(--color-card-text);
+}
+/*End card pokemon*/
