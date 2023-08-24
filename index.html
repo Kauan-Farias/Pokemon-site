@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="images/icons/favicon.png" type="icon">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/elements-pokemon.css">
+    <link rel="stylesheet" href="css/slider-pokemon.css">
     <script src="js/pokemon-evolve.js" defer></script>
+    <script src="js/pokemon-slider.js" defer></script>
 </head>
 <body>
     <header class="header-top">
@@ -29,61 +31,184 @@
     </nav>
     <main class="main-container">  
      <section class="pokemon">
+        <div class="pokemon__generation">
+             <!--Radio Buttons Start-->
+             <input type="radio" name="radio-btn" id="radio1">
+             <input type="radio" name="radio-btn" id="radio2">
+             <input type="radio" name="radio-btn" id="radio3">
+             <input type="radio" name="radio-btn" id="radio4">
+             <input type="radio" name="radio-btn" id="radio5">
+             <input type="radio" name="radio-btn" id="radio6">
+             <input type="radio" name="radio-btn" id="radio7">
+             <input type="radio" name="radio-btn" id="radio8">
+             <input type="radio" name="radio-btn" id="radio9">
+             <!--Radio Buttons End-->
 
-        <div class="pokemon__card" id="pokemon__card1">
-            <span class="pokemon__level" id="level-bulbasaur">
-                lvl: 1
-            </span>
-            <span class="pokemon__sprite">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur" id="sprite-bulbasaur">
-            </span>
-            <h2 class="pokemon__nome" id="name-bulbasaur">Bulbasaur</h2>
-            <h3 class="pokemon__number" id="number-bulbasaur">Nº 0001</h3>
-            <dl class="pokemon__info">
-                <dt>Type</dt>
-                <dd><span class="type-pokemon--grass">Grass</span><span class="type-pokemon--poison">Poison</span></dd>
-                <dt>Ability</dt>
-                <dd>Overgrow</dd>
-            </dl>
-            <button class="pokemon__evolve" id="evolve-bulbasaur">Evolve</button>
+                <!--Slide Itens Start-->
+            <div class="slide first">
+                <div class="box1">
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-bulbasaur">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur" id="sprite-bulbasaur">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-bulbasaur">Bulbasaur</h2>
+                        <h3 class="pokemon__number" id="number-bulbasaur">Nº 0001</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--grass">Grass</span><span class="type-pokemon--poison">Poison</span></dd>
+                            <dt>Ability</dt>
+                            <dd>Overgrow</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-bulbasaur">Evolve</button>
+                    </div>
+        
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-charmander">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" id="sprite-charmander">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-charmander">Charmander</h2>
+                        <h3 class="pokemon__number" id="number-charmander">Nº 0004</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--fire">Fire</span><span id="new-type-charmander"></span></dd>
+                            <dt>Ability</dt>
+                            <dd>Blaze</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-charmander">Evolve</button>
+                    </div>
+        
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-squirtle">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="Squirtle" id="sprite-squirtle">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-squirtle">Squirtle</h2>
+                        <h3 class="pokemon__number" id="number-squirtle">Nº 0007</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--water">Water</span></dd>
+                            <dt>Ability</dt>
+                            <dd>Torrent</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-squirtle">Evolve</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="box2">
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-bulbasaur">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="Bulbasaur" id="sprite-bulbasaur">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-bulbasaur">Bulbasaur</h2>
+                        <h3 class="pokemon__number" id="number-bulbasaur">Nº 0001</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--grass">Grass</span><span class="type-pokemon--poison">Poison</span></dd>
+                            <dt>Ability</dt>
+                            <dd>Overgrow</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-bulbasaur">Evolve</button>
+                    </div>
+
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-charmander">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" id="sprite-charmander">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-charmander">Charmander</h2>
+                        <h3 class="pokemon__number" id="number-charmander">Nº 0004</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--fire">Fire</span><span id="new-type-charmander"></span></dd>
+                            <dt>Ability</dt>
+                            <dd>Blaze</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-charmander">Evolve</button>
+                    </div>
+        
+                    <div class="pokemon__card">
+                        <span class="pokemon__level" id="level-squirtle">
+                            lvl: 1
+                        </span>
+                        <span class="pokemon__sprite">
+                            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="Squirtle" id="sprite-squirtle">
+                        </span>
+                        <h2 class="pokemon__nome" id="name-squirtle">Squirtle</h2>
+                        <h3 class="pokemon__number" id="number-squirtle">Nº 0007</h3>
+                        <dl class="pokemon__info">
+                            <dt>Type</dt>
+                            <dd><span class="type-pokemon--water">Water</span></dd>
+                            <dt>Ability</dt>
+                            <dd>Torrent</dd>
+                        </dl>
+                        <button class="pokemon__evolve" id="evolve-squirtle">Evolve</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="box3"></div>
+            </div>
+            <div class="slide">
+                <div class="box4"></div>
+            </div>
+            <div class="slide">
+                <div class="box5"></div>
+            </div>
+            <div class="slide">
+                <div class="box6"></div>
+            </div>
+            <div class="slide">
+                <div class="box7"></div>
+            </div>
+            <div class="slide">
+                <div class="box8"></div>
+            </div>
+            <div class="slide">
+                <div class="box9"></div>
+            </div>
+            <!--Slide Itens End-->
+
+            <!--Navigation Auto Start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+                <div class="auto-btn6"></div>
+                <div class="auto-btn7"></div>
+                <div class="auto-btn8"></div>
+                <div class="auto-btn9"></div>
+            </div>
+            <!--Navigation Auto End-->
         </div>
-
-        <div class="pokemon__card">
-            <span class="pokemon__level" id="level-charmander">
-                lvl: 1
-            </span>
-            <span class="pokemon__sprite">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" id="sprite-charmander">
-            </span>
-            <h2 class="pokemon__nome" id="name-charmander">Charmander</h2>
-            <h3 class="pokemon__number" id="number-charmander">Nº 0004</h3>
-            <dl class="pokemon__info">
-                <dt>Type</dt>
-                <dd><span class="type-pokemon--fire">Fire</span><span id="new-type-charmander"></span></dd>
-                <dt>Ability</dt>
-                <dd>Blaze</dd>
-            </dl>
-            <button class="pokemon__evolve" id="evolve-charmander">Evolve</button>
+          <!--Manual Navigation Start-->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+            <label for="radio7" class="manual-btn"></label>
+            <label for="radio8" class="manual-btn"></label>
+            <label for="radio9" class="manual-btn"></label>
         </div>
-
-        <div class="pokemon__card">
-            <span class="pokemon__level" id="level-squirtle">
-                lvl: 1
-            </span>
-            <span class="pokemon__sprite">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" alt="Squirtle" id="sprite-squirtle">
-            </span>
-            <h2 class="pokemon__nome" id="name-squirtle">Squirtle</h2>
-            <h3 class="pokemon__number" id="number-squirtle">Nº 0007</h3>
-            <dl class="pokemon__info">
-                <dt>Type</dt>
-                <dd><span class="type-pokemon--water">Water</span></dd>
-                <dt>Ability</dt>
-                <dd>Torrent</dd>
-            </dl>
-            <button class="pokemon__evolve" id="evolve-squirtle">Evolve</button>
-        </div>
-
+        <!--Manual Navigation End-->
      </section>
     </main>
 </body>
