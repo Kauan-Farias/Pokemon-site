@@ -1,0 +1,147 @@
+.pokemon{
+	margin: 0 auto;
+	width: 100%;/*Tamanho do slide*/
+    padding: 5px;
+	height: 455px;
+	overflow: hidden;
+	border: 1px solid black;
+}
+
+.pokemon__generation{
+    width: 1000%;
+	height: 455px;
+	display: flex;
+}
+
+.pokemon__generation input{
+	display: none;
+}
+
+.slide{
+	width: 25%;
+	position: relative;
+	transition: 2s;
+}
+
+.slide > div{
+	display: inline-block;
+	width: 92%;/*Tamanho do slide*/
+	height: 455px;
+}
+
+.manual-navigation{
+	position: absolute;
+	width: 90%; /*Tamanho do slide*/
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-navigation > .manual-btn{
+	border: 2px solid rgb(0, 0, 0);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-navigation > .manual-btn:hover{
+	background-color: rgb(0, 0, 0);
+}
+
+.manual-navigation > .manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio2:checked ~ .first{
+	margin-left: -12.8%;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio3:checked ~ .first{
+	margin-left: -25.6%;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio4:checked ~ .first{
+	margin-left: -38.4%;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio5:checked ~ .first{
+	margin-left: -51.2%;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio6:checked ~ .first{
+	margin-left: -64%;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio7:checked ~ .first{
+	margin-left: -76.8%;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio8:checked ~ .first{
+	margin-left: -89.6%;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8{
+	background-color: rgb(0, 0, 0);
+}
+
+#radio9:checked ~ .first{
+	margin-left: -102.4%;
+}
+
+#radio9:checked ~ .navigation-auto .auto-btn9{
+	background-color: rgb(0, 0, 0);
+}
+
+
+.navigation-auto{
+	position: absolute;
+	width: 90%; /*Tamanho do slide*/
+	margin-top: 495px;
+	display: flex;
+	justify-content: center;
+}
+
+.navigation-auto > div{
+	border: 2px solid rgb(0, 0, 0);
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navigation-auto > div:not(:last-child){
+	margin-right: 40px;
+}
