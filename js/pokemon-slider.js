@@ -7,7 +7,7 @@ setInterval(function(){
 
 function nextIten(){
     count++;
-    if(count>4){
+    if(count>9){
         count = 1;
     }
 
