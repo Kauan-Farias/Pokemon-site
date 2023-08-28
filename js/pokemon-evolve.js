@@ -99,3 +99,99 @@ squirtle.addEventListener('click', function(){
 })
 //Squirtle evolve
 
+//Chikorita evolve
+// Ch == Squirtle
+var chikorita = window.document.getElementById('evolve-chikorita');
+var spriteCh = window.document.getElementById('sprite-chikorita');
+var levelCh = window.document.getElementById('level-chikorita');
+var nameCh = window.document.getElementById('name-chikorita');
+var numberCh = window.document.getElementById('number-chikorita')
+var clickCh = 0
+
+chikorita.addEventListener('click', function(){
+    if(clickCh == 0){
+        clickCh = 2
+        spriteCh.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png"
+        levelCh.innerHTML = 'lvl:16'
+        nameCh.innerHTML = 'Bayleef'
+        numberCh.innerHTML = 'Nº 0153'
+    } else if(clickCh == 2) {
+        clickCh = 3
+        levelCh.innerHTML = 'lvl:36'
+        spriteCh.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/154.png"
+        nameCh.innerHTML = 'Meganium'
+        numberCh.innerHTML = 'Nº 0154'
+    } else {
+        clickCh = 0
+        levelCh.innerHTML = 'lvl:1'
+        spriteCh.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png"
+        nameCh.innerHTML = 'Chikorita'
+        numberCh.innerHTML = 'Nº 0152'
+    }
+})
+//Chikorita evolve
+
+//Cyndaquil evolve
+// Cyn == Cyndaquil
+var cyndaquil = window.document.getElementById('evolve-cyndaquil');
+var spriteCyn = window.document.getElementById('sprite-cyndaquil');
+var levelCyn = window.document.getElementById('level-cyndaquil');
+var nameCyn = window.document.getElementById('name-cyndaquil');
+var numberCyn = window.document.getElementById('number-cyndaquil')
+var clickCyn = 0
+
+cyndaquil.addEventListener('click', function(){
+    if(clickCyn == 0){
+        clickCyn = 2
+        spriteCyn.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/156.png"
+        levelCyn.innerHTML = 'lvl:16'
+        nameCyn.innerHTML = 'Quilava'
+        numberCyn.innerHTML = 'Nº 0156'
+    } else if(clickCyn == 2) {
+        clickCyn = 3
+        levelCyn.innerHTML = 'lvl:36'
+        spriteCyn.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/157.png"
+        nameCyn.innerHTML = 'Typhlosion'
+        numberCyn.innerHTML = 'Nº 0157'
+    } else {
+        clickCyn = 0
+        levelCyn.innerHTML = 'lvl:1'
+        spriteCyn.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/155.png"
+        nameCyn.innerHTML = 'Cyndaquil'
+        numberCyn.innerHTML = 'Nº 0155'
+    }
+})
+//Chikorita evolve
+
+//Totodile evolve
+// To == Totodile
+var totodile = window.document.getElementById('evolve-totodile');
+var spriteTo = window.document.getElementById('sprite-totodile');
+var levelTo = window.document.getElementById('level-totodile');
+var nameTo = window.document.getElementById('name-totodile');
+var numberTo = window.document.getElementById('number-totodile')
+var clickTo = 0
+
+totodile.addEventListener('click', function(){
+    if(clickTo == 0){
+        clickTo = 2
+        spriteTo.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/159.png"
+        levelTo.innerHTML = 'lvl:16'
+        nameTo.innerHTML = 'Croconaw'
+        numberTo.innerHTML = 'Nº 0159'
+    } else if(clickTo == 2) {
+        clickTo = 3
+        levelTo.innerHTML = 'lvl:36'
+        spriteTo.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png"
+        nameTo.innerHTML = 'Feraligatr'
+        numberTo.innerHTML = 'Nº 0160'
+    } else {
+        clickTo = 0
+        levelTo.innerHTML = 'lvl:1'
+        spriteTo.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png"
+        nameTo.innerHTML = 'Totodile'
+        numberTo.innerHTML = 'Nº 0158'
+    }
+})
+//Chikorita evolve
+
