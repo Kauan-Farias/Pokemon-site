@@ -8,7 +8,7 @@
 }
 
 .pokemon__generation{
-    width: 1000%;
+    width: 901%;
 	height: 455px;
 	display: flex;
 }
@@ -18,15 +18,21 @@
 }
 
 .slide{
-	width: 25%;
+	width: 12%;
 	position: relative;
 	transition: 2s;
+	display: flex;
+	justify-content: center;
+	margin-left: 39px;
 }
 
 .slide > div{
-	display: inline-block;
-	width: 92%;/*Tamanho do slide*/
-	height: 455px;
+	display: flex;
+	width: 1242px;;/*Tamanho do slide*/
+	height: 450px;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
 }
 
 .manual-navigation{
