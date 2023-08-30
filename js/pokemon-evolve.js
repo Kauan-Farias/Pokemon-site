@@ -4,7 +4,7 @@ var bulbasaur = window.document.getElementById('evolve-bulbasaur');
 var spriteB = window.document.getElementById('sprite-bulbasaur');
 var levelB = window.document.getElementById('level-bulbasaur');
 var nameB = window.document.getElementById('name-bulbasaur');
-var numberB = window.document.getElementById('number-bulbasaur')
+var numberB = window.document.getElementById('number-bulbasaur');
 var clickB = 0
 
 bulbasaur.addEventListener('click', function(){
@@ -36,8 +36,8 @@ var charmander = window.document.getElementById('evolve-charmander');
 var spriteC = window.document.getElementById('sprite-charmander');
 var levelC = window.document.getElementById('level-charmander');
 var nameC = window.document.getElementById('name-charmander');
-var numberC = window.document.getElementById('number-charmander')
-var newTypeC = window.document.getElementById('new-type-charmander')
+var numberC = window.document.getElementById('number-charmander');
+var newTypeC = window.document.getElementById('new-type-charmander');
 var clickC = 0
 
 charmander.addEventListener('click', function(){
@@ -73,7 +73,7 @@ var squirtle = window.document.getElementById('evolve-squirtle');
 var spriteS = window.document.getElementById('sprite-squirtle');
 var levelS = window.document.getElementById('level-squirtle');
 var nameS = window.document.getElementById('name-squirtle');
-var numberS = window.document.getElementById('number-squirtle')
+var numberS = window.document.getElementById('number-squirtle');
 var clickS = 0
 
 squirtle.addEventListener('click', function(){
@@ -105,7 +105,7 @@ var chikorita = window.document.getElementById('evolve-chikorita');
 var spriteCh = window.document.getElementById('sprite-chikorita');
 var levelCh = window.document.getElementById('level-chikorita');
 var nameCh = window.document.getElementById('name-chikorita');
-var numberCh = window.document.getElementById('number-chikorita')
+var numberCh = window.document.getElementById('number-chikorita');
 var clickCh = 0
 
 chikorita.addEventListener('click', function(){
@@ -137,7 +137,7 @@ var cyndaquil = window.document.getElementById('evolve-cyndaquil');
 var spriteCyn = window.document.getElementById('sprite-cyndaquil');
 var levelCyn = window.document.getElementById('level-cyndaquil');
 var nameCyn = window.document.getElementById('name-cyndaquil');
-var numberCyn = window.document.getElementById('number-cyndaquil')
+var numberCyn = window.document.getElementById('number-cyndaquil');
 var clickCyn = 0
 
 cyndaquil.addEventListener('click', function(){
@@ -169,7 +169,7 @@ var totodile = window.document.getElementById('evolve-totodile');
 var spriteTo = window.document.getElementById('sprite-totodile');
 var levelTo = window.document.getElementById('level-totodile');
 var nameTo = window.document.getElementById('name-totodile');
-var numberTo = window.document.getElementById('number-totodile')
+var numberTo = window.document.getElementById('number-totodile');
 var clickTo = 0
 
 totodile.addEventListener('click', function(){
@@ -193,5 +193,118 @@ totodile.addEventListener('click', function(){
         numberTo.innerHTML = 'Nº 0158'
     }
 })
-//Chikorita evolve
+//Totodile evolve
+
+
+//Treecko evolve
+// Tre == Treecko
+var treecko = window.document.getElementById('evolve-treecko');
+var spriteTre = window.document.getElementById('sprite-treecko');
+var levelTre = window.document.getElementById('level-treecko');
+var nameTre = window.document.getElementById('name-treecko');
+var numberTre = window.document.getElementById('number-treecko');
+var clickTre = 0
+
+treecko.addEventListener('click', function(){
+    if(clickTre == 0){
+        clickTre = 2
+        spriteTre.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/253.png"
+        levelTre.innerHTML = 'lvl:16'
+        nameTre.innerHTML = 'Grovyle'
+        numberTre.innerHTML = 'Nº 0253'
+    } else if(clickTre == 2) {
+        clickTre = 3
+        levelTre.innerHTML = 'lvl:36'
+        spriteTre.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/254.png"
+        nameTre.innerHTML = 'Sceptile'
+        numberTre.innerHTML = 'Nº 0254'
+    } else {
+        clickTre = 0
+        levelTre.innerHTML = 'lvl:1'
+        spriteTre.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/252.png"
+        nameTre.innerHTML = 'Treecko'
+        numberTre.innerHTML = 'Nº 0252'
+    }
+})
+//Treecko evolve
+
+
+//Torchic evolve
+// Tor == Torchic
+var torchic = window.document.getElementById('evolve-torchic');
+var spriteTor = window.document.getElementById('sprite-torchic');
+var levelTor = window.document.getElementById('level-torchic');
+var nameTor = window.document.getElementById('name-torchic');
+var numberTor = window.document.getElementById('number-torchic');
+var newTypeTor = window.document.getElementById('new-type-torchic');
+var clickTor = 0
+
+torchic.addEventListener('click', function(){
+    if(clickTor == 0){
+        clickTor = 2
+        spriteTor.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/256.png"
+        levelTor.innerHTML = 'lvl:16'
+        nameTor.innerHTML = 'Combusken'
+        numberTor.innerHTML = 'Nº 0256'
+        newTypeTor.classList.add('type-pokemon--fighting')
+        newTypeTor.innerHTML = 'Fighting'
+    } else if(clickTor == 2) {
+        clickTor = 3
+        levelTor.innerHTML = 'lvl:36'
+        spriteTor.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/257.png"
+        nameTor.innerHTML = 'Blaziken'
+        numberTor.innerHTML = 'Nº 0257'
+        newTypeTor.classList.add('type-pokemon--fighting')
+        newTypeTor.innerHTML = 'Fighting'
+    } else {
+        clickTor = 0
+        levelTor.innerHTML = 'lvl:1'
+        spriteTor.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png"
+        nameTor.innerHTML = 'Torchic'
+        numberTor.innerHTML = 'Nº 0255'
+        newTypeTor.classList.remove('type-pokemon--fighting')
+        newTypeTor.innerHTML = ''
+    }
+})
+//Torchic evolve
+
+//Mudkip evolve
+// Mud == Mudkip
+var mudkip = window.document.getElementById('evolve-mudkip');
+var spriteMud = window.document.getElementById('sprite-mudkip');
+var levelMud = window.document.getElementById('level-mudkip');
+var nameMud = window.document.getElementById('name-mudkip');
+var numberMud = window.document.getElementById('number-mudkip');
+var newTypeMud = window.document.getElementById('new-type-mudkip');
+var clickMud = 0
+
+mudkip.addEventListener('click', function(){
+    if(clickMud == 0){
+        clickMud = 2
+        spriteMud.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/259.png"
+        levelMud.innerHTML = 'lvl:16'
+        nameMud.innerHTML = 'Marshtomp'
+        numberMud.innerHTML = 'Nº 0259'
+        newTypeMud.classList.add('type-pokemon--ground')
+        newTypeMud.innerHTML = 'Ground'
+    } else if(clickMud == 2) {
+        clickMud = 3
+        levelMud.innerHTML = 'lvl:36'
+        spriteMud.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png"
+        nameMud.innerHTML = 'Swampert'
+        numberMud.innerHTML = 'Nº 0260'
+        newTypeMud.classList.add('type-pokemon--ground')
+        newTypeMud.innerHTML = 'Ground'
+    } else {
+        clickMud = 0
+        levelMud.innerHTML = 'lvl:1'
+        spriteMud.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png"
+        nameMud.innerHTML = 'Mudkip'
+        numberMud.innerHTML = 'Nº 0258'
+        newTypeMud.classList.remove('type-pokemon--ground')
+        newTypeMud.innerHTML = ''
+    }
+})
+//Mudkip evolve
+
 
